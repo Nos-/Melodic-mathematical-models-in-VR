@@ -9,3 +9,10 @@ Thanks for the data providers:
 
 ![Screenshot.png](Screenshot.png)
 
+
+## How to use ##
+
+* unpack the compressed executables in the executable folder (the tgz-file contains the executable for linux and the zip file contains an exe-file for windows)
+* or feed the other files to an webserver and open it in a webbrowser (it can't be opend directly)
+* Android - sorry, not yet ready
+* and of course you can open the project in the Godot-Editor too
