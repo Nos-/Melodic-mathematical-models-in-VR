@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/4010250_ged_57_0-127.wav-6f84d72f5013960e3858e4837431af23.sample"
+
+[deps]
+
+source_file="res://Silbermann/4010250_ged_57_0-127.wav"
+dest_files=[ "res://.import/4010250_ged_57_0-127.wav-6f84d72f5013960e3858e4837431af23.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

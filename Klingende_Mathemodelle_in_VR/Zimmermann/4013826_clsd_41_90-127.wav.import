@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/4013826_clsd_41_90-127.wav-82ce4507b89f0726a2f05f9e62aa9575.sample"
+
+[deps]
+
+source_file="res://Zimmermann/4013826_clsd_41_90-127.wav"
+dest_files=[ "res://.import/4013826_clsd_41_90-127.wav-82ce4507b89f0726a2f05f9e62aa9575.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

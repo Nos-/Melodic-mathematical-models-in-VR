@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/4040141_std_21_90-127.wav-64d3822bc24404ffc9f9bff5ec5db163.sample"
+
+[deps]
+
+source_file="res://Schimmel/4040141_std_21_90-127.wav"
+dest_files=[ "res://.import/4040141_std_21_90-127.wav-64d3822bc24404ffc9f9bff5ec5db163.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

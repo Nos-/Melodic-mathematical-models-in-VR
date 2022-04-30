@@ -1,0 +1,106 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Fadenmodell_12_4.glb" type="PackedScene" id=1]
+[ext_resource path="res://Singing_icon.svg" type="Texture" id=2]
+[ext_resource path="res://Schimmel/4040141_std_21_90-127.wav" type="AudioStream" id=3]
+[ext_resource path="res://Zimmermann/4013826_clsd_41_90-127.wav" type="AudioStream" id=4]
+[ext_resource path="res://Silbermann/4010250_ged_57_0-127.wav" type="AudioStream" id=5]
+[ext_resource path="res://Migliai/4010082_kop_27_0-127.wav" type="AudioStream" id=6]
+[ext_resource path="res://Play_2.gd" type="Script" id=7]
+[ext_resource path="res://Button_2.gd" type="Script" id=8]
+[ext_resource path="res://AudioStreamPlayer_2.gd" type="Script" id=9]
+[ext_resource path="res://AudioStreamPlayer_3.gd" type="Script" id=10]
+[ext_resource path="res://AudioStreamPlayer_4.gd" type="Script" id=11]
+[ext_resource path="res://AudioStreamPlayer_5.gd" type="Script" id=12]
+[ext_resource path="res://Fadenmodell_12_4.gd" type="Script" id=13]
+
+[node name="Fadenmodell_12_4" instance=ExtResource( 1 )]
+script = ExtResource( 13 )
+
+[node name="Play_2" type="Sprite3D" parent="Shape_IndexedFaceSet002" index="0"]
+transform = Transform( 1, 0.000341663, 0.000175203, -0.000341663, 1, 2.34821e-06, -0.000175202, -2.39661e-06, 1, 0, -0.786496, 0 )
+flip_h = true
+texture = ExtResource( 2 )
+script = ExtResource( 7 )
+
+[node name="Button_2" type="Button" parent="Shape_IndexedFaceSet002/Play_2" index="0"]
+margin_left = 47.0
+margin_top = 46.0
+margin_right = 268.0
+margin_bottom = 147.0
+custom_colors/font_color = Color( 0.729412, 0.698039, 0.207843, 1 )
+text = "golden Strings"
+icon = ExtResource( 2 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer_2" type="AudioStreamPlayer" parent="Shape_IndexedFaceSet002/Play_2" index="1"]
+stream = ExtResource( 6 )
+script = ExtResource( 9 )
+
+[node name="Play_3" type="Sprite3D" parent="Shape_IndexedFaceSet003" index="0"]
+transform = Transform( 0.80832, 0, -0.588745, 0, 1, 0, 0.588746, 0, 0.808319, -4.58467, -0.832385, -2.17035 )
+texture = ExtResource( 2 )
+
+[node name="AudioStreamPlayer_3" type="AudioStreamPlayer" parent="Shape_IndexedFaceSet003/Play_3" index="0"]
+stream = ExtResource( 3 )
+script = ExtResource( 10 )
+
+[node name="Button_3" type="Button" parent="Shape_IndexedFaceSet003/Play_3" index="1"]
+margin_left = 50.0
+margin_top = 165.0
+margin_right = 263.0
+margin_bottom = 266.0
+custom_colors/font_color = Color( 0.152941, 0.180392, 0.643137, 1 )
+text = "silver strings"
+icon = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Play_4" type="Sprite3D" parent="Shape_IndexedFaceSet004" index="0"]
+transform = Transform( 0.0814691, 0, 0.996676, 0, 1, 0, -0.996678, 0, 0.0814689, -2.49741, -0.594141, 2.80252 )
+texture = ExtResource( 2 )
+
+[node name="AudioStreamPlayer_4" type="AudioStreamPlayer" parent="Shape_IndexedFaceSet004/Play_4" index="0"]
+stream = ExtResource( 5 )
+script = ExtResource( 11 )
+
+[node name="Button_4" type="Button" parent="Shape_IndexedFaceSet004/Play_4" index="1"]
+margin_left = 51.0
+margin_top = 289.0
+margin_right = 265.0
+margin_bottom = 390.0
+custom_colors/font_color = Color( 0.239216, 0.623529, 0.207843, 1 )
+text = "green strings"
+icon = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Play_5" type="Sprite3D" parent="Shape_IndexedFaceSet005" index="0"]
+transform = Transform( -0.68131, 0, -0.731997, 0, 1, 0, 0.731997, 0, -0.681309, -0.77387, -2.37824, -1.83578 )
+texture = ExtResource( 2 )
+
+[node name="AudioStreamPlayer_5" type="AudioStreamPlayer" parent="Shape_IndexedFaceSet005/Play_5" index="0"]
+stream = ExtResource( 4 )
+script = ExtResource( 12 )
+
+[node name="Button_5" type="Button" parent="Shape_IndexedFaceSet005/Play_5" index="1"]
+margin_left = 50.0
+margin_top = 410.0
+margin_right = 269.0
+margin_bottom = 511.0
+custom_colors/font_color = Color( 0.686275, 0.180392, 0.54902, 1 )
+text = "purple strings"
+icon = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="Shape_IndexedFaceSet002/Play_2/Button_2" to="Shape_IndexedFaceSet002/Play_2/AudioStreamPlayer_2" method="_on_Button_2_pressed"]
+[connection signal="pressed" from="Shape_IndexedFaceSet003/Play_3/Button_3" to="Shape_IndexedFaceSet003/Play_3/AudioStreamPlayer_3" method="_on_Button_pressed"]
+[connection signal="pressed" from="Shape_IndexedFaceSet004/Play_4/Button_4" to="Shape_IndexedFaceSet004/Play_4/AudioStreamPlayer_4" method="_on_Button_pressed"]
+[connection signal="pressed" from="Shape_IndexedFaceSet005/Play_5/Button_5" to="Shape_IndexedFaceSet005/Play_5/AudioStreamPlayer_5" method="_on_Button_pressed"]

@@ -1,0 +1,71 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://restart.gd" type="Script" id=1]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="rotate_right" type="Button" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -40.0
+text = ">"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="rotate_left" type="Button" parent="."]
+anchor_bottom = 1.0
+margin_right = 40.0
+text = "<"
+
+[node name="rotate_up" type="Button" parent="."]
+anchor_right = 1.0
+margin_bottom = 40.0
+text = "^"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="rotate_down" type="Button" parent="."]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -40.0
+text = "v"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -49.0
+margin_top = -100.0
+margin_right = 49.0
+margin_bottom = -60.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="show_info" type="Button" parent="HBoxContainer"]
+margin_right = 61.0
+margin_bottom = 40.0
+text = "   Info   "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="restart" type="Button" parent="HBoxContainer"]
+margin_left = 65.0
+margin_right = 130.0
+margin_bottom = 40.0
+text = " Restart "
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
