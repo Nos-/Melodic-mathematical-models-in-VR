@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://restart.gd" type="Script" id=1]
+[ext_resource path="res://show_info.gd" type="Script" id=2]
+[ext_resource path="res://AboutPopupwindow.tscn" type="PackedScene" id=3]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -56,9 +58,17 @@ __meta__ = {
 margin_right = 61.0
 margin_bottom = 40.0
 text = "   Info   "
+script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="AboutControl" parent="HBoxContainer/show_info" instance=ExtResource( 3 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -4.0
+margin_right = -4.0
+margin_bottom = 40.0
 
 [node name="restart" type="Button" parent="HBoxContainer"]
 margin_left = 65.0
@@ -69,3 +79,5 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[connection signal="pressed" from="HBoxContainer/show_info" to="HBoxContainer/show_info" method="_on_show_info_pressed"]

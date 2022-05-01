@@ -1,0 +1,57 @@
+[gd_scene format=2]
+
+[node name="AboutControl" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PopupDialog" type="PopupDialog" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -400.0
+margin_top = -150.0
+margin_right = 400.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 300, 200 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="PopupDialog"]
+margin_left = 25.0
+margin_top = 25.0
+margin_right = 775.0
+margin_bottom = 225.0
+rect_min_size = Vector2( 300, 200 )
+focus_mode = 2
+bbcode_enabled = true
+bbcode_text = "[b]Melodic-mathematical-models-in-VR[/b]
+[b]Mathematical models not only to look at but also for listen too - just sonified mathematical models in virtual-reality.[/b]
+
+[url=https://codingdavinci.de/de/events/ost3-2022]Coding da Vinci-Kulturhackathon Ost³ 2022[/url] project of N. Schwirz:  [url=https://codingdavinci.de/de/projekte/klingende-mathemodelle-vr]Klingende Mathemodelle in VR[/url].
+
+Thanks for the data providers:
+  * [url=https://codingdavinci.de/de/daten/digitales-archiv-mathematischer-modelle]Digitales Archiv mathematischer Modelle[/url] for the cool math-stuff
+  * [url=https://codingdavinci.de/de/daten/vier-musikinstrumente-aus-vier-jahrhunderten-multimodale-forschungsdaten]Musikinstrumentenmuseum der Universität Leipzig[/url] for the historic sounds
+
+Additional infomation, updates as well as the source code can be found here: [url=https://github.com/Nos-/Melodic-mathematical-models-in-VR]https://github.com/Nos-/Melodic-mathematical-models-in-VR[/url]"
+text = "Melodic-mathematical-models-in-VR
+Mathematical models not only to look at but also for listen too - just sonified mathematical models in virtual-reality.
+
+Coding da Vinci-Kulturhackathon Ost³ 2022 project of N. Schwirz:  Klingende Mathemodelle in VR.
+
+Thanks for the data providers:
+  * Digitales Archiv mathematischer Modelle for the cool math-stuff
+  * Musikinstrumentenmuseum der Universität Leipzig for the historic sounds
+
+Additional infomation, updates as well as the source code can be found here: https://github.com/Nos-/Melodic-mathematical-models-in-VR"
+fit_content_height = true
+selection_enabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}

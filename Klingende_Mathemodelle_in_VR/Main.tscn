@@ -8,8 +8,6 @@
 
 [node name="Floor" parent="." instance=ExtResource( 1 )]
 
-[node name="Control" parent="." instance=ExtResource( 2 )]
-
 [node name="SpotLight" type="SpotLight" parent="."]
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 200, 0 )
 shadow_enabled = true
@@ -18,14 +16,24 @@ spot_attenuation = 0.500001
 spot_angle = 40.63
 
 [node name="Camera" type="Camera" parent="."]
-transform = Transform( -4.37114e-08, -0.707107, 0.707107, 0, 0.707107, 0.707107, -1, 3.09086e-08, -3.09086e-08, 50, 150, 0 )
+transform = Transform( -4.37114e-08, -0.707107, 0.707107, 0, 0.707107, 0.707107, -1, 3.09086e-08, -3.09086e-08, 75, 150, 0 )
 fov = 102.5
 far = 500.0
 
 [node name="Fadenmodell_12_4" parent="." instance=ExtResource( 3 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 100, 0 )
 
+[node name="Control" parent="." instance=ExtResource( 2 )]
+
+[node name="restart" parent="Control/HBoxContainer" index="1"]
+margin_right = 121.0
+text = "  Stop  "
+
+[connection signal="pressed" from="Control/rotate_right" to="Fadenmodell_12_4" method="_on_rotate_right_pressed"]
+[connection signal="pressed" from="Control/rotate_left" to="Fadenmodell_12_4" method="_on_rotate_left_pressed"]
+[connection signal="pressed" from="Control/rotate_up" to="Fadenmodell_12_4" method="_on_rotate_up_pressed"]
+[connection signal="pressed" from="Control/rotate_down" to="Fadenmodell_12_4" method="_on_rotate_down_pressed"]
 [connection signal="pressed" from="Control/HBoxContainer/restart" to="Fadenmodell_12_4" method="_on_restart_pressed"]
 
-[editable path="Control"]
 [editable path="Fadenmodell_12_4"]
+[editable path="Control"]
